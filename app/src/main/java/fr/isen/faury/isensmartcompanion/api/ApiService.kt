@@ -1,5 +1,6 @@
-package fr.isen.faury.isensmartcompanion
+package fr.isen.faury.isensmartcompanion.api
 
+import fr.isen.faury.isensmartcompanion.model.Event
 import retrofit2.Call
 import retrofit2.http.GET
 
