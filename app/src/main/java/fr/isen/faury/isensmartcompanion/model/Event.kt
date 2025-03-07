@@ -1,7 +1,10 @@
 package fr.isen.faury.isensmartcompanion.model
 
 import java.io.Serializable
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 data class Event (
     val id: String,
     val title: String,
@@ -9,7 +12,7 @@ data class Event (
     val date: String,
     val location: String,
     val category: String,
-    val isNotificationEnabled: Boolean = true): Serializable {
+    val isNotificationEnabled: Boolean = true): Parcelable {
         companion object {
             fun fakeEvents(): List<Event> {
                 return listOf(
